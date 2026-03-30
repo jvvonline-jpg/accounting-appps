@@ -40,7 +40,7 @@ def split_pdf(uploaded_file):
     return zip_buffer
 
 # --- UI LAYOUT ---
-uploaded_file = st.file_file_uploader("Choose a PDF file", type="pdf")
+uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
 
 if uploaded_file:
     if st.button("🚀 Process and Split"):
